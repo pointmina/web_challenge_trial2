@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial_2</title>
+    <style>
+
+        @font-face {
+          font-family: "Han";
+          src: url("HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+          font-style: normal;
+        }
+
+        * {
+            font-family:'Han', serif;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            display: flex;
+            box-shadow: 5px 5px 7px 2px rgba(128, 119, 255, 0.297);
+            width: 500px;
+            height: 400px;
+            border-radius: 2em;
+        }
+
+        .left_container {
+            float: left;
+            background : linear-gradient(hsl(252, 64%, 47%),hsl(241, 81%, 54%));
+            width: 50%;
+            height: 100%;
+            border-radius: 2em;
+            position: relative; /* add a relative position to the container */
+            
+        }
+
+        .circle {
+            background : pink;
+            width: 150px;
+            height: 150px;
+            border-radius:50%;
+            position: absolute; /* position the element absolutely */
+            top: 38%; /* position the element 50% from the top of the container */
+            left: 50%; /* position the element 50% from the left of the container */
+            transform: translate(-50%, -50%); /* center the element horizontally and vertically */
+            right: 50%;
+        }
+
+        .right_container {
+            float: right;
+            background : white;
+            width: 50%;
+            height: 100%;
+            border-radius: 1.5em;
+            position: relative; /* add a relative position to the container */
+        }
+
+        .right_container_title {
+
+        }
+
+        .right_container_small {
+            
+            background : pink;
+            width: 80%;
+            height: 60%;
+            border-radius: 0.5em;
+            position: absolute; /* position the element absolutely */
+            top: 45%; /* position the element 50% from the top of the container */
+            left: 50%; /* position the element 50% from the left of the container */
+            transform: translate(-50%, -50%); /* center the element horizontally and vertically */
+           
+        }
+
+        
+
+        .category{
+        background-color: rgb(255, 255, 255);
+        height: 21%;
+        margin: 8px 0px;
+        border-radius: 0.5em;
+        align-items: center;
+        /* justify-content: center; */
+        display: flex;
+        }
+
+        .icon_1 {
+            margin-left: 5%;
+            height: 20px;
+            width: 20px;
+            background-image: url("icon-reaction.svg")
+        }
+
+        .icon_2 {
+            margin-left: 5%;
+            height: 20px;
+            width: 20px;
+            background-image: url("icon-memory.svg")
+        }
+
+        .icon_3 {
+            margin-left: 5%;
+            height: 20px;
+            width: 20px;
+            background-image: url("icon-verbal.svg")
+        }
+
+        .icon_4 {
+            margin-left: 5%;
+            height: 20px;
+            width: 20px;
+            background-image: url("icon-visual.svg")
+        }
+
+        .category_name {
+            margin-left: 10px;
+        }
+
+        .category_score {
+            position:fixed;
+            margin-left: 140px;            
+        }
+        
+        .right_container_footer {
+            background: hsl(224, 30%, 27%);
+            width: 80%;
+            height: 15%;
+            border-radius: 2em;
+            position: absolute; /* position the element absolutely */
+            top: 88%; /* position the element 50% from the top of the container */
+            left: 50%; /* position the element 50% from the left of the container */
+            transform: translate(-50%, -50%);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .right_container_footer:hover {
+            background:linear-gradient(hsl(252, 66%, 38%),hsl(241, 81%, 54%));
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left_container">
+            <div class="circle">
+
+            </div>            
+        </div>
+
+        <div class="right_container">
+            <div class="right_container_title">
+                Summary
+            </div>
+            <div class="right_container_small">
+                    <div class="category">
+                        <div class="icon_1"></div>
+                        <div class="category_name">
+                            Reactoin 
+                        </div>
+                        <div class="category_score">
+                            80/100
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="icon_2"></div>
+                        <div class="category_name">
+                            Memory  
+                        </div>
+                        <div class="category_score">
+                            92/100
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="icon_3"></div>
+                        <div class="category_name">
+                            Verbal  
+                        </div>
+                        <div class="category_score">
+                            61/100
+                        </div>
+                    </div>
+
+                    <div class="category">
+                        <div class="icon_4"></div>
+                        <div class="category_name">
+                            Visual
+                        </div>
+                        <div class="category_score">
+                            72/100
+                        </div>
+                    </div>
+                
+            </div>
+            
+            <div class="right_container_footer">
+                Continue
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
