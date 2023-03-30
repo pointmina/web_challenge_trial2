@@ -41,8 +41,18 @@
             
         }
 
+        .left_container_title {
+            width: 80%;
+            height: 5%;
+            position: absolute;
+            top: 8%; /* position the element 50% from the top of the container */
+            left: 30%; /* position the element 50% from the left of the container */
+            font-size: 23px;
+            color: rgba(255, 255, 255, 0.429);
+        }
+
         .circle {
-            background : pink;
+            background : linear-gradient(hsl(241, 55%, 30%),hsl(241, 81%, 54%));
             width: 150px;
             height: 150px;
             border-radius:50%;
@@ -51,7 +61,39 @@
             left: 50%; /* position the element 50% from the left of the container */
             transform: translate(-50%, -50%); /* center the element horizontally and vertically */
             right: 50%;
+            font-weight: 700;
+
         }
+
+        .score{
+            font-size: 50px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+            margin-top: 40px;
+
+        }
+
+        .left_container_evaluate{
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+            margin-top: 240px;
+        }
+
+        .left_container_footer{
+            font-size: 15px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            color: rgba(255, 255, 255, 0.592);
+            margin-top: 10px;
+        }
+        
 
         .right_container {
             float: right;
@@ -134,6 +176,8 @@
             margin-left: 165px;            
         }
         
+        
+
         .right_container_footer {
             color: white;
             background: hsl(224, 30%, 27%);
@@ -160,9 +204,22 @@
 <body>
     <div class="container">
         <div class="left_container">
+            <div class="left_container_title">
+            Your Result
+            </div>
             <div class="circle">
-
-            </div>            
+                <span class="score">76</span> 
+                <span style="margin-left: 50px; color: rgba(255, 255, 255, 0.357);">of 100</span>
+            </div>         
+            
+            <div class="left_container_evaluate">
+                Great
+            </div>
+            <div class="left_container_footer">
+                you scored higher than 65% of<br>
+            the people who have taken <br>
+            these tests.</span>
+            </div>
         </div>
 
         <div class="right_container">
